@@ -1,0 +1,167 @@
+/* === Global Styles === */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+/* === Hero Section === */
+.hero {
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero .btn, .hero .btn-primary {
+  margin: 10px;
+}
+
+/* === Buttons === */
+.btn, .btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn {
+  background: #ffffff;
+  color: #004d40;
+  border: 2px solid #ffffff;
+}
+
+.btn-primary {
+  background: #4caf50;
+  color: white;
+  border: none;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+/* === Success Stories === */
+.success-stories .story {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 4px solid #4caf50;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* === Stats Section === */
+.stats {
+  background: #f1f8f6;
+  text-align: center;
+  padding: 60px 20px;
+}
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.stat {
+  margin: 20px;
+}
+.counter {
+  font-size: 48px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* === Chart Section === */
+.chart-section {
+  background: #fff;
+  padding-top: 40px;
+}
+
+canvas {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  display: block;
+}
+
+/* === Testimonials === */
+.testimonials {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.testimonial-slider {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+.testimonial {
+  display: none;
+  font-style: italic;
+  padding: 20px;
+}
+.testimonial.active {
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* === About Section === */
+.about {
+  background: #e0f2f1;
+  text-align: center;
+}
+
+/* === CTA Section === */
+.cta {
+  text-align: center;
+  background: #004d40;
+  color: white;
+  padding: 60px 20px;
+}
+
+/* === Dark Mode === */
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+body.dark-mode .hero,
+body.dark-mode .cta {
+  background: #1e1e1e;
+}
+body.dark-mode .btn,
+body.dark-mode .btn-primary {
+  background: #333;
+  color: #fff;
+}
