@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Doe - Financial Advisor Portfolio</title>
+  
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <button id="darkToggle" class="dark-toggle">🌓</button>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>John Doe – Trusted Financial Advisor</h1>
+      <p>Helping clients grow their wealth with data-driven strategies and personalized advice.</p>
+      <div class="buttons">
+        <a href="https://wa.me/YOURNUMBER" class="btn">📱 WhatsApp Me</a>
+        <a href="https://yourbookinglink.com" class="btn-primary">📅 Book an Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section class="success-stories">
+    <div class="container">
+      <h2>Client Success Stories</h2>
+      <div class="story">
+        <p>💼 <strong>Client A</strong>: £120,000 → <strong>£300,000+</strong> in 3 years</p>
+        <p>📈 Strategy: Long-term ETFs & equity blend</p>
+      </div>
+      <div class="story">
+        <p>💼 <strong>Client B</strong>: £50,000 → <strong>£110,000</strong> in 18 months</p>
+        <p>📊 Strategy: Dividend-focused stocks</p>
+      </div>
+      <div class="story">
+        <p>💼 <strong>Client C</strong>: £200,000 → <strong>£420,000</strong></p>
+        <p>📉 Strategy: Balanced risk portfolio</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <h2>By the Numbers</h2>
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="counter" data-target="50">0</span>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+          <span class="counter" data-target="10">0</span>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat">
+          <span class="counter" data-target="95">0</span>
+          <p>% Client Retention</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Chart -->
+  <section class="chart-section">
+    <div class="container">
+      <h2>Portfolio Growth</h2>
+      <canvas id="portfolioChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Clients Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <p>"John’s advice helped me double my portfolio in 2 years. Professional, reliable, and transparent."</p>
+          <h4>– Sarah M.</h4>
+        </div>
+        <div class="testimonial">
+          <p>"I never understood investments until John explained them clearly. Now I feel confident with my money."</p>
+          <h4>– David K.</h4>
+        </div>
+        <div class="testimonial">
+          <p>"John treats your goals like his own. I recommend him to anyone serious about their future."</p>
+          <h4>– Amina T.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m John Doe, a seasoned financial advisor with over a decade of experience helping individuals and businesses grow their wealth. My approach combines deep market knowledge with personalized strategy planning.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action (CTA) -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Grow Your Wealth?</h2>
+      <p>Let’s have a conversation about your financial future.</p>
+      <a href="https://wa.me/YOURNUMBER" class="btn">📱 Chat on WhatsApp</a>
+      <a href="https://yourbookinglink.com" class="btn-primary">📅 Book a Consultation</a>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
